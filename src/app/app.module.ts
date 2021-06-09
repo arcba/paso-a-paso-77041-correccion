@@ -12,6 +12,7 @@ import { ArticulosFamiliasService } from './services/articulos-familias.service'
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
+
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { MockArticulosService } from './services/mock-articulos.service';
 
@@ -39,8 +40,7 @@ import { MockArticulosService } from './services/mock-articulos.service';
   providers: [
     MockArticulosFamiliasService,
     ArticulosFamiliasService,
-    MockArticulosService,
-    { provide: APP_BASE_HREF, useValue: '/' }
+    MockArticulosService
   ]
 })
 export class AppModule {}
